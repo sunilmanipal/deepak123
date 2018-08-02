@@ -69,7 +69,7 @@ http://ec2-34-219-13-126.us-west-2.compute.amazonaws.com:9000
             <url>https://repo.spring.io/libs-release</url>
         </pluginRepository>
     </pluginRepositories>
-    <profiles>
+  
 
 
 </project>
