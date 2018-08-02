@@ -12,16 +12,7 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>1.5.8.RELEASE</version>
     </parent>
-<profile>
-<id>sonar</id>
-<properties>
-<!-- Optional URL to server. Default value is http://localhost:9000 -->
-<sonar.host.url>
-http://ec2-34-219-13-126.us-west-2.compute.amazonaws.com:9000
-</sonar.host.url>
-</properties>
-</profile>
-</profiles>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -40,7 +31,17 @@ http://ec2-34-219-13-126.us-west-2.compute.amazonaws.com:9000
         
         
     </dependencies>
-    
+    <profiles>
+    <profile>
+<id>sonar</id>
+<properties>
+<!-- Optional URL to server. Default value is http://localhost:9000 -->
+<sonar.host.url>
+http://ec2-34-219-13-126.us-west-2.compute.amazonaws.com:9000
+</sonar.host.url>
+</properties>
+</profile>
+</profiles>
 
     <properties>
         <java.version>1.8</java.version>
